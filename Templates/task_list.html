@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Список задач{% endblock %}
+
+{% block content %}
+    <h1>Список дел на сегодня:</h1>
+    <ul class="no-bullets">
+      {% for task in tasks %}
+<!--        <li>{{loop.index}} . {{ task }}</li>-->
+        <li>{{ task }}</li>
+      {% endfor %}
+    </ul>
+{% endblock %}
+
